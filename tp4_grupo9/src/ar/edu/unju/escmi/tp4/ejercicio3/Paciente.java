@@ -1,8 +1,11 @@
 package ar.edu.unju.escmi.tp4.ejercicio3;
 
 public class Paciente implements Comparable<Paciente>{
-	private int dni, nroHistoriaClinica;
-	private String nombre, apellido, obraSocial;
+	private int dni;
+	private int nroHistoriaClinica;
+	private String nombre;
+	private String apellido;
+	private String obraSocial;
 	
 	public Paciente() {
 		
