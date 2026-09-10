@@ -1,4 +1,3 @@
-
 package ar.edu.unju.escmi.tp4.ejercicio1;
 
 public class Jugador {
@@ -59,4 +58,3 @@ public class Jugador {
 		System.out.println("Estatura: " + estatura);
 	}
 }
-
