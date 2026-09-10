@@ -44,24 +44,28 @@ public class Ejercicio1 {
         		System.out.println("Ingresar DNI del jugador: ");
         		int dniMostrar = sc.nextInt();
         		sc.nextLine();
+        		boolean encontrado = false;
         		for (Jugador j : jugadores) {
-        			if(j.getDni()== dniMostrar) {
+        			if (j.getDni() == dniMostrar) {
         				j.mostrarDatos();
-        				System.out.println("ingresar nuevo nombre: ");
+        				System.out.println("Ingresar nuevo nombre: ");
         				j.setNombre(sc.nextLine());
-        				System.out.println("ingresar nuevo equipo: ");
+        				System.out.println("Ingresar nuevo equipo: ");
         				j.setEquipo(sc.nextLine());
-        				System.out.println("ingresar nueva nacionalidad ");
+        				System.out.println("Ingresar nueva nacionalidad: ");
         				j.setNacionalidad(sc.nextLine());
-        				System.out.println("ingresar nueva estatura: ");
+        				System.out.println("Ingresar nueva estatura: ");
         				j.setEstatura(sc.nextDouble());
         				sc.nextLine();
         				System.out.println("Jugador modificado");
+        				encontrado = true;
         				break;
-        			}else {
-        				System.out.println("No existe jugador con este DNI");
         			}
         		}
+        		if (!encontrado) {
+        			System.out.println("No existe jugador con este DNI");
+        		}
+
         		break;
         	case 3:
         		System.out.println("Ingresar DNI del jugador: ");
